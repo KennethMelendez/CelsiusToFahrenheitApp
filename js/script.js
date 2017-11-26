@@ -18,7 +18,9 @@ if (userInput && submit && result){
       result.textContent = '°F: ' +  fahrenheit;
       console.log(fahrenheit);
 
-      } else {
+    } else if (inputC == 0){
+      result.textContent = '°F: ' + 32;
+    } else {
         result.textContent = "Sorry, but that is not a number";
       }
 
